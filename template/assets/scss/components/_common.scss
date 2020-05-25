@@ -1,0 +1,19 @@
+.content-wrapper {
+    min-height: calc(100vh - 70px);
+    display: flex;
+}
+
+ul {
+    padding: 0;
+    li {
+        list-style-type: none;
+    }
+}
+
+a {
+    color: inherit;
+}
+
+.grid-margin {
+    margin-bottom: 30px;
+}

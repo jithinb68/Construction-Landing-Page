@@ -1,0 +1,28 @@
+.form-check {
+  .form-check-input {
+    display: none;
+  }
+  .form-check-label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    &::before {
+      content:"";
+      display: inline-block;
+      width: 21px;
+      height: 21px;
+      border: 1px solid $input-border-color;
+      margin-right: 11px;;
+      position: absolute;
+      left: -43px;
+      top: 0;
+      font-family: "Material Design Icons";
+      color:  #000000;
+      text-align: center;
+      line-height: 21px;
+  }
+  }
+}

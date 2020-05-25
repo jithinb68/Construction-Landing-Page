@@ -1,0 +1,16 @@
+.left-sidebar {
+    border-right: 1px solid $border-color;
+    width: 256px;
+    .filter-content {
+        padding: 15px 20px;
+    }
+    .filter-heading {
+        padding: 7px 20px;
+    }
+}
+
+.right-sidebar {
+    border-left: 1px solid $border-color;
+    width: 256px;
+
+}

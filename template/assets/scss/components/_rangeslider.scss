@@ -1,0 +1,39 @@
+.irs--flat {
+  .irs-bar {
+    background: #0168fa;
+  }
+
+} 
+
+.irs--flat {
+  .irs-handle {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border: 1px solid #5b47fb;
+    border-radius: 100%;
+    > i {
+      display: none !important;
+    }
+    &:before {
+      margin-left: -4px;
+      top: 4px;
+      width: 8px;
+      height: 8px;
+      border-radius: 100%;
+    }
+  }
+  .irs-to, 
+  .irs-from {
+    background: #0168fa;
+    &:before {
+      border-top-color: #0168fa;
+    }
+  }
+  .irs-line {
+    height: 8px;
+  }
+  .irs-bar {
+    height: 8px;
+  }
+}

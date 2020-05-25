@@ -1,7 +1,18 @@
 // Variables and fonts
-@import 'components/variable.scss';
+@import 'components/variable';
 
 // Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-@import 'components/navbar.scss';
+
+@import 'components/rangeslider';
+@import 'components/typography';
+@import 'components/badge';
+@import 'components/ratings';
+@import 'components/card';
+@import 'components/forms';
+@import 'components/common';
+@import 'components/main';
+@import 'components/avatar';
+@import 'components/navbar';
+@import 'components/sidebar';
