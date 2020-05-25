@@ -14,4 +14,19 @@ gulp.task('clean', () => {
     ]);
 });
 
+function cleanVendors(){
+    return del('assets/vendors/**/*');
+}
+
+function buildVendors() {
+    var addon1 = gulp.src('./node_modules/bootstrap/**/*')
+                     .pipe(gulp.dest('assets/vendors/bootstrap'));
+    var addon2 = gulp.src('./node_modules/@mdi/**/*')
+                     .pipe(gulp.dest('assets/vendors/@mdi'));
+
+    return (addon1, addon2);
+}
+
 gulp.task('default', gulp.series(['clean', 'styles']));
+
+exports.buildVendors = gulp.series(cleanVendors, buildVendors);
