@@ -30,10 +30,10 @@
                 </form>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link nav-link-icon" href="#!"><i class="mdi mdi-email-outline"></i></a>
+                        <a class="nav-link nav-link-icon" href="#!"><i class="mdi mdi-help-circle-outline"></i></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link nav-link-icon" href="#!"><i class="mdi mdi-bell-outline"></i></a>
+                        <a class="nav-link nav-link-icon" href="#!"><i class="mdi mdi-lock-outline"></i></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link nav-link-icon" href="#!">
@@ -46,7 +46,7 @@
     </nav>
     <div class="content-wrapper">
         <div class="left-sidebar">
-            <h4 class="mb-2 border-bottom filter-heading">Filters</h4>
+            <h4 class="mb-2 border-bottom filter-heading"><i class="mdi mdi-compass-outline mr-1"></i> Filters</h4>
             <div class="filter-content">
                 <div class="mb-2">
                     <h6 class="mb-3">Basic Filtering</h6>
@@ -60,25 +60,40 @@
                     </div>
                     <div class="architecture-dropdown mb-3">
                         <div class="form-group">
-                            <label for="inputExampleOne" class="sr-only">Square feet</label>
-                            <input type="text" class="form-control" name="inputExampleOne" id="inputExampleOne" placeholder="Square feet">
+                            <label for="inputExampleTwo" class="sr-only">Input with left icon</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text px-3"><i class="mdi mdi-star-circle"></i></span>
+                                </div>
+                                <input type="text" class="form-control" name="inputExampleTwo" id="inputExampleTwo" placeholder="Square feet">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="mb-2">
+                <div class="rooms-floor smb-2">
                     <h6 class="mb-3">Rooms / Floors</h6>
                     <div class="d-flex">
                         <div class="row">
                             <div class="col-6">
                                 <div class="form-group">
-                                    <label for="inputExampleOne" class="sr-only">Square feet</label>
-                                    <input type="text" class="form-control" name="inputExampleOne" id="inputExampleOne" placeholder="Rooms">
+                                    <label for="inputExampleTwo" class="sr-only">Input with left icon</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="mdi mdi-star-circle"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" name="inputExampleTwo" id="inputExampleTwo" placeholder="Floors">
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <div class="form-group">
-                                    <label for="inputExampleOne" class="sr-only">Square feet</label>
-                                    <input type="text" class="form-control" name="inputExampleOne" id="inputExampleOne" placeholder="Floors">
+                                    <label for="inputExampleTwo" class="sr-only">Input with left icon</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="mdi mdi-star-circle"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" name="inputExampleTwo" id="inputExampleTwo" placeholder="Rooms">
+                                    </div>
                                 </div>
                             </div>
                         </div>  
@@ -86,34 +101,39 @@
                 </div>
                 <div class="mb-2">
                     <h6 class="mb-3">Amenities</h6>
-                    <div class="pl-4">
+                    <div>
                         <ul>
                             <li>
                                 <div class="form-check mb-2">
+                                    <i class="mdi mdi-triforce mr-3"></i>
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                                     <label class="form-check-label" for="inlineCheckbox1">Garden</label>
                                 </div>
                             </li>
                             <li>
                                 <div class="form-check mb-2">
+                                    <i class="mdi mdi-swim mr-3"></i>
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                                     <label class="form-check-label" for="inlineCheckbox1">Swimming Pool</label>
                                 </div>
                             </li>
                             <li>
                                 <div class="form-check mb-2">
+                                    <i class="mdi mdi-office-building mr-3"></i>
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                                     <label class="form-check-label" for="inlineCheckbox1">Balcony</label>
                                 </div>
                             </li>
                             <li>
                                 <div class="form-check mb-2">
+                                    <i class="mdi mdi-palm-tree mr-3"></i>
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                                     <label class="form-check-label" for="inlineCheckbox1">Lawn</label>
                                 </div>
                             </li>
                             <li>
                                 <div class="form-check mb-2">
+                                    <i class="mdi mdi-pine-tree mr-3"></i>
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                                     <label class="form-check-label" for="inlineCheckbox1">Trees</label>
                                 </div>
@@ -174,7 +194,7 @@
                                     <div class="d-flex justify-content-between align-items-center mt-3">
                                         <div class="card-actions">
                                             <a href="#"><i class="mdi mdi-heart-outline"></i></a>
-                                            <a href="#" class="ml-2"><i class="mdi mdi-bookmark text-success"></i></a>
+                                            <a href="#" class="ml-2"><i class="mdi mdi-bookmark text-info"></i></a>
                                             <a href="#" class="ml-2"><i class="mdi mdi-home-outline"></i></a>    
                                         </div>
                                         <select id="example-css1" name="rating" autocomplete="off">
@@ -248,9 +268,68 @@
                         </div>
                     </div>
                 </div>
+                <div class="d-flex justify-content-end w-100">
+                    <nav aria-label="Page navigation example 3">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#!">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>  
             </div>
         </div>
-        <div class="right-sidebar"></div> 
+        <div class="right-sidebar">
+            <h4 class="mb-2 border-bottom adversite-heading"><i class="mdi mdi-image-frame mr-1"></i>Advertisement</h4>
+            <div class="row py-3 px-3">
+                <div class="col-12 grid-margin">
+                    <dic class="card advertise-card">
+                        <div class="card-body p-0">
+                            <img src="../assets/images/advertisement/ad-1.jpg" class="img-fluid" alt="">
+                            <div class="p-2">
+                                <h6>For customized work click here</h6>
+                                <p class="tx-12">Building according to your need with the best assistance in the world</p>
+                            </div>
+                        </div>
+                    </dic>
+                </div>
+                <div class="col-12">
+                    <dic class="card advertise-card">
+                        <div class="card-body p-0">
+                            <img src="../assets/images/advertisement/ad-2.jpg" class="img-fluid" alt="">
+                            <div class="p-2">
+                                <h6>For customized work click here</h6>
+                                <p class="tx-12">Building according to your need with the best assistance in the world</p>
+                            </div>
+                        </div>
+                    </dic>
+                </div>
+            </div>
+            <h4 class="mb-2 border-bottom border-top adversite-heading"><i class="mdi mdi-nintendo-switch mr-1"></i>Recomondations</h4>
+            <div class="row px-3">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <img src="../assets/images/recomondations/rec-1.jpg" alt="" class="img-fluid">
+                            <div class="p-2">
+                                <h6>Perfect Space</h6>
+                                <p class="tx-12">The Perfect recomondations for you based on your intrest</p>
+                            </div>
+                            <div class="d-flex">
+                                <a href="#"class="w-50 border-right border-top text-center p-2">
+                                    <i class="mdi mdi-heart-outline"></i>
+                                </a> 
+                                <a href="#"class="w-50 border-top text-center p-2">
+                                    <i class="mdi mdi-circle-edit-outline"></i>
+                                </a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
     </div>
     <script src="../assets/vendors/jquery/jquery.min.js"></script>
     <script src="../assets/vendors/jquery-bar-rating/jquery.barrating.min.js"></script>

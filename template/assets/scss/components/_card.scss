@@ -21,4 +21,11 @@
             border-width: 2px;
         }
     }
+    &.advertise-card {
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            background-color: rgb(190, 206, 220);
+        }
+    }
 }

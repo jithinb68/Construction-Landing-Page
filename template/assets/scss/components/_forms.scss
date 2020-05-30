@@ -1,10 +1,11 @@
 .form-check {
+  position: relative;
+  padding: 0;
   .form-check-input {
     display: none;
   }
   .form-check-label {
     display: inline-block;
-    position: relative;
     cursor: pointer;
     font-size: 14px;
     line-height: 21px;
@@ -17,12 +18,34 @@
       border: 1px solid $input-border-color;
       margin-right: 11px;;
       position: absolute;
-      left: -43px;
+      right: 0;
       top: 0;
       font-family: "Material Design Icons";
       color:  #000000;
       text-align: center;
       line-height: 21px;
   }
+  }
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+.rooms-floor {
+  .input-group-prepend {
+    .input-group-text {
+      padding: 0.5rem 0.7rem;
+    }
+  }
+  .form-control {
+    padding: 0.5rem;
+  }
+  i {
+    font-size: 0.9rem;
   }
 }
