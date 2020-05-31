@@ -11,19 +11,34 @@ $('.rangeslider3').ionRangeSlider({
 $('#example-css').barrating({
     theme: 'css-stars',
     showSelectedRating: false
-  });
+});
 
-  $('#example-css1').barrating({
+$('#example-css1').barrating({
     theme: 'css-stars',
     showSelectedRating: false
-  });
+});
 
-  $('#example-css2').barrating({
+$('#example-css2').barrating({
     theme: 'css-stars',
     showSelectedRating: false
-  });
+});
 
-  $('#example-css3').barrating({
+$('#example-css3').barrating({
     theme: 'css-stars',
     showSelectedRating: false
-  });
+});
+
+$('#example-css4').barrating({
+  theme: 'css-stars',
+  showSelectedRating: false
+});
+
+$('#example-css5').barrating({
+  theme: 'css-stars',
+  showSelectedRating: false
+});
+
+$('#example-css6').barrating({
+  theme: 'css-stars',
+  showSelectedRating: false
+});

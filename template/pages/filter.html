@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Construction</title>
     <link rel="stylesheet" href="../assets/vendors/jquery-bar-rating/css-stars.css">
     <link rel="stylesheet" href="../assets/vendors/@mdi/font/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../assets/vendors/ion-rangeslider/css/ion.rangeSlider.css">
@@ -30,7 +30,7 @@
                 </form>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link nav-link-icon dropdown-toggle" id="settingsdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-cog-outline"></i></a>
+                        <a class="nav-link dropdown-toggle" id="settingsdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-cog-outline"></i></a>
                         <div class="dropdown-menu" aria-labelledby="settingsdropdown">
                             <h4 class="mb-0 px-3">Settings</h4>             
                             <a class="dropdown-item preview-item border-bottom border-top" href="#">
@@ -61,7 +61,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link nav-link-icon dropdown-toggle" id="settingsdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-email-outline"></i></a>
+                        <a class="nav-link dropdown-toggle" id="settingsdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-email-outline"></i></a>
                         <div class="dropdown-menu" aria-labelledby="settingsdropdown">
                             <h4 class="mb-0 px-3">Messages</h4>       
                             <a class="dropdown-item preview-item border-bottom  border-top" href="#">
@@ -95,7 +95,7 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link nav-link-icon dropdown-toggle" id="messagedropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-account-outline"></i></a>
+                        <a class="nav-link dropdown-toggle" id="messagedropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-account-outline"></i></a>
                         <div class="dropdown-menu" aria-labelledby="messagedropdown">
                             <a class="dropdown-item" href="#"><i class="mdi mdi-puzzle-edit-outline mr-2"></i>Profile</a>
                             <a class="dropdown-item" href="#"><i class="mdi mdi-wallet-outline mr-2"></i>My Wallet</a>
@@ -104,10 +104,10 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-icon" onclick="myFunction()" href="#!"><i class="mdi mdi-lock-outline"></i></a>
+                        <a class="nav-link" href="#!"><i class="mdi mdi-lock-outline"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-icon" href="#!">
+                        <a class="nav-link" href="#!">
                             <div class="avatar avatar-sm avatar-rounded"><img src="../assets/images/faces/face1.jpg" alt="profile" /></div>
                         </a>
                     </li>
@@ -119,7 +119,7 @@
         <div class="left-sidebar">
             <h4 class="mb-2 border-bottom filter-heading"><i class="mdi mdi-compass-outline mr-1"></i> FILTERS</h4>
             <div class="filter-content">
-                <div class="mb-2">
+                <div class="mb-4">
                     <h6 class="mb-3">Basic Filtering</h6>
                     <div class="architecture-dropdown mb-3">
                         <select class="custom-select">
@@ -141,7 +141,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="rooms-floor smb-2">
+                <div class="rooms-floor mb-3">
                     <h6 class="mb-3">Rooms / Floors</h6>
                     <div class="d-flex justify-content-between">  
                         <div class="architecture-dropdown mb-3">
@@ -162,7 +162,7 @@
                         </div>    
                     </div>
                 </div>
-                <div class="mb-2">
+                <div class="mb-4">
                     <h6 class="mb-3">Amenities</h6>
                     <div>
                         <ul>
@@ -176,38 +176,37 @@
                             <li>
                                 <div class="form-check mb-2">
                                     <i class="mdi mdi-swim mr-3"></i>
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                    <label class="form-check-label" for="inlineCheckbox1">Swimming Pool</label>
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox2">Swimming Pool</label>
                                 </div>
                             </li>
                             <li>
                                 <div class="form-check mb-2">
                                     <i class="mdi mdi-office-building mr-3"></i>
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                    <label class="form-check-label" for="inlineCheckbox1">Balcony</label>
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox3">Balcony</label>
                                 </div>
                             </li>
                             <li>
                                 <div class="form-check mb-2">
                                     <i class="mdi mdi-palm-tree mr-3"></i>
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                    <label class="form-check-label" for="inlineCheckbox1">Lawn</label>
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox4">Lawn</label>
                                 </div>
                             </li>
                             <li>
                                 <div class="form-check mb-2">
                                     <i class="mdi mdi-pine-tree mr-3"></i>
-                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                    <label class="form-check-label" for="inlineCheckbox1">Trees</label>
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox5">Trees</label>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="mb-2">
+                <div class="mb-4">
                     <h6 class="mb-4">Price Range</h6>
                     <div class="form-group mb-3">
-                        <!-- <input type="range" class="form-control-range" id="formControlRange"> -->
                         <input type="text" class="rangeslider3" name="example_name" data-extra-classes="irs-outline">
                     </div>
                 </div>   
@@ -215,17 +214,6 @@
         </div>
         <div class="main">
             <div class="row">
-                <div class="col-12 mb-2">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <h4 class="mb-0">FILTER</h4>
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                              <li class="breadcrumb-item active" aria-current="page">Filter</li>
-                            </ol>
-                        </nav>                       
-                    </div>
-                </div>
                 <div class="col-12 grid-margin">
                     <div class="card preview-card">
                         <div class="card-body">
@@ -332,6 +320,93 @@
                                             <a href="#" class="ml-2"><i class="mdi mdi-home-outline"></i></a>    
                                         </div>
                                         <select id="example-css3" name="rating" autocomplete="off">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                          </select>
+                                    </div>        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 grid-margin">
+                    <div class="card preview-card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="../assets/images/house-images/house-6.jpg" class="img-fluid preview-card-image" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <h4>Cloud Nine Homes</h4>
+                                    <div class="card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div class="card-actions">
+                                            <a href="#"><i class="mdi mdi-heart text-danger"></i></a>
+                                            <a href="#" class="ml-2"><i class="mdi mdi-bookmark-outline"></i></a>
+                                            <a href="#" class="ml-2"><i class="mdi mdi-home-outline"></i></a>    
+                                        </div>
+                                        <select id="example-css4" name="rating" autocomplete="off">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                          </select>
+                                    </div>        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 grid-margin">
+                    <div class="card preview-card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="../assets/images/house-images/house-7.jpg" class="img-fluid preview-card-image" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <h4>Cloud Nine Homes</h4>
+                                    <div class="card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div class="card-actions">
+                                            <a href="#"><i class="mdi mdi-heart text-danger"></i></a>
+                                            <a href="#" class="ml-2"><i class="mdi mdi-bookmark-outline"></i></a>
+                                            <a href="#" class="ml-2"><i class="mdi mdi-home-outline"></i></a>    
+                                        </div>
+                                        <select id="example-css5" name="rating" autocomplete="off">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                          </select>
+                                    </div>        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 grid-margin">
+                    <div class="card preview-card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="../assets/images/house-images/house-2.jpg" class="img-fluid preview-card-image" alt="">
+                                </div>
+                                <div class="col-8">
+                                    <h4>Cloud Nine Homes</h4>
+                                    <div class="card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div class="card-actions">
+                                            <a href="#"><i class="mdi mdi-heart text-danger"></i></a>
+                                            <a href="#" class="ml-2"><i class="mdi mdi-bookmark-outline"></i></a>
+                                            <a href="#" class="ml-2"><i class="mdi mdi-home-outline"></i></a>    
+                                        </div>
+                                        <select id="example-css6" name="rating" autocomplete="off">
                                             <option value="1">1</option>
                                             <option value="2">2</option>
                                             <option value="3">3</option>

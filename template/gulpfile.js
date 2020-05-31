@@ -59,7 +59,6 @@ function buildVendors() {
     return (addon1, addon2, addon3, addon4, addon5, addon6, addon7, addon8, addon9, addon10);
 }
 
-// gulp.task('default', gulp.series(['clean', 'styles']));
 exports.style = styleMain;
 exports.watch = watch;
 exports.buildVendors = gulp.series(cleanVendors, buildVendors);

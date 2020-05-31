@@ -1,7 +1,3 @@
-.container .navbar {
-    border-radius: 0.25rem;
-}
-
 .navbar {
     padding: 0;
     height: 60px;
@@ -93,30 +89,3 @@
         }
     }
 }
-
-navbar-expand {
-    @each $breakpoint in map-keys($grid-breakpoints) {
-      $next: breakpoint-next($breakpoint, $grid-breakpoints);
-      $infix: breakpoint-infix($next, $grid-breakpoints);
-
-      &#{$infix} {
-        @include media-breakpoint-up($next) {
-            .navbar-nav {
-                .nav-link.nav-link-icon {
-                    padding-left: 12px;
-                    padding-right: 12px;
-                }
-            }
-        }
-      }
-    }
-}
-
-.header-with-bg {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-
