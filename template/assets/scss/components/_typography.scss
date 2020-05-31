@@ -1,8 +1,6 @@
 body {
     font-size: 16px;
-}
-h1, h2 , h3, h4, h5, h6 {
-    font-weight: bold;
+    font-family: $type1;
 }
 h1,.h1 {
     font-size: 16px;
@@ -17,22 +15,27 @@ h3,.h3 {
     line-height: 42px;
 }
 h4,.h4 {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 36px;
 }
 h5,.h5 {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 30px;
 }
 h6,.h6 {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 24px;
 }
 
 p {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .tx-12 {
     font-size: 12px;
+}
+
+.img-sm {
+    width: 34px;
+    height: 34px;
 }

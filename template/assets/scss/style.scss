@@ -4,7 +4,8 @@
 // Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-
+@import "components/fonts";
+@import "components/breadcrumbs";
 @import 'components/rangeslider';
 @import 'components/pagination';
 @import 'components/typography';

@@ -53,8 +53,10 @@ function buildVendors() {
                     .pipe(gulp.dest('./assets/vendors/jquery-bar-rating'));
     var addon9 = gulp.src(['./node_modules/jquery-bar-rating/dist/themes/css-stars.css'])
                     .pipe(gulp.dest('./assets/vendors/jquery-bar-rating'));
+    var addon10 = gulp.src(['./node_modules/popper.js/dist/umd/popper.min.js'])
+                    .pipe(gulp.dest('./assets/vendors/popper'));
 
-    return (addon1, addon2, addon3, addon4, addon5, addon6, addon7, addon8, addon9);
+    return (addon1, addon2, addon3, addon4, addon5, addon6, addon7, addon8, addon9, addon10);
 }
 
 // gulp.task('default', gulp.series(['clean', 'styles']));

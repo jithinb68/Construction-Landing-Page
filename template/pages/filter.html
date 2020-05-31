@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg border">
+    <nav class="navbar navbar-expand-lg">
         <div class="navbar-brand-wrapper">
             <a class="navbar-brand" href="index.html"><img src="../assets/images/logo.png" alt="logo" class="img-fluid"></a>
         </div>
-        <div class="navbar-content-wrapper">
+        <div class="navbar-content-wrapper  border-bottom">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#demoNavbar2"
                 aria-controls="demoNavbar2" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="demoNavbar2">
+            <div class="collapse navbar-collapse align-items-stretch">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="#!"><i class="mdi mdi-menu"></i></a>
@@ -29,13 +29,84 @@
                     <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                 </form>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link nav-link-icon" href="#!"><i class="mdi mdi-help-circle-outline"></i></a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-link-icon dropdown-toggle" id="settingsdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-cog-outline"></i></a>
+                        <div class="dropdown-menu" aria-labelledby="settingsdropdown">
+                            <h4 class="mb-0 px-3">Settings</h4>             
+                            <a class="dropdown-item preview-item border-bottom border-top" href="#">
+                                <div class="preview-icon bg-success">
+                                    <i class="mdi mdi-shield-airplane-outline text-white"></i>
+                                </div>
+                                <div class="preview-content">
+                                    <h6 class="mb-0">User settings</h6>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item border-bottom" href="#">
+                                <div class="preview-icon bg-danger">
+                                    <i class="mdi mdi-menu text-white"></i>
+                                </div>
+                                <div class="preview-content">
+                                    <h6 class="mb-0">Chnage password</h6>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item border-bottom" href="#">
+                                <div class="preview-icon bg-info">
+                                    <i class="mdi mdi-star-outline text-white"></i>
+                                </div>
+                                <div class="preview-content">
+                                    <h6 class="mb-0">Advanced settings</h6>
+                                </div>
+                            </a>
+                            <h6 class="mb-0 px-3 py-2">View more</h6>
+                        </div>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link nav-link-icon" href="#!"><i class="mdi mdi-lock-outline"></i></a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-link-icon dropdown-toggle" id="settingsdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-email-outline"></i></a>
+                        <div class="dropdown-menu" aria-labelledby="settingsdropdown">
+                            <h4 class="mb-0 px-3">Messages</h4>       
+                            <a class="dropdown-item preview-item border-bottom  border-top" href="#">
+                                <div class="preview-image">
+                                    <img src="../assets/images/faces/face14.jpg" class="rounded img-sm" alt="">
+                                </div>
+                                <div class="preview-content">
+                                    <h6 class="mb-0">Peter Parker</h6>
+                                    <p class="mb-0">When will you be here ?</p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item  border-bottom" href="#">
+                                <div class="preview-image">
+                                    <img src="../assets/images/faces/face15.jpg" class="rounded img-sm" alt="">
+                                </div>
+                                <div class="preview-content">
+                                    <h6 class="mb-0">Shane Watson</h6>
+                                    <p class="mb-0">How are you ?</p>
+                                </div>
+                            </a>
+                            <a class="dropdown-item preview-item border-bottom" href="#">
+                                <div class="preview-image">
+                                    <img src="../assets/images/faces/face16.jpg" class="rounded img-sm" alt="">
+                                </div>
+                                <div class="preview-content">
+                                    <h6 class="mb-0">Peter Parker</h6>
+                                    <p class="mb-0">Can you come fast ?</p>
+                                </div>
+                            </a>
+                            <h6 class="mb-0 px-3 py-2">View more</h6>
+                        </div>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-link-icon dropdown-toggle" id="messagedropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-account-outline"></i></a>
+                        <div class="dropdown-menu" aria-labelledby="messagedropdown">
+                            <a class="dropdown-item" href="#"><i class="mdi mdi-puzzle-edit-outline mr-2"></i>Profile</a>
+                            <a class="dropdown-item" href="#"><i class="mdi mdi-wallet-outline mr-2"></i>My Wallet</a>
+                            <a class="dropdown-item" href="#"><i class="mdi mdi-star-outline mr-2"></i>Settings</a>
+                            <a class="dropdown-item" href="#"><i class="mdi mdi-monitor-share mr-2"></i>Lockscreen</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-icon" onclick="myFunction()" href="#!"><i class="mdi mdi-lock-outline"></i></a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link nav-link-icon" href="#!">
                             <div class="avatar avatar-sm avatar-rounded"><img src="../assets/images/faces/face1.jpg" alt="profile" /></div>
                         </a>
@@ -46,7 +117,7 @@
     </nav>
     <div class="content-wrapper">
         <div class="left-sidebar">
-            <h4 class="mb-2 border-bottom filter-heading"><i class="mdi mdi-compass-outline mr-1"></i> Filters</h4>
+            <h4 class="mb-2 border-bottom filter-heading"><i class="mdi mdi-compass-outline mr-1"></i> FILTERS</h4>
             <div class="filter-content">
                 <div class="mb-2">
                     <h6 class="mb-3">Basic Filtering</h6>
@@ -72,31 +143,23 @@
                 </div>
                 <div class="rooms-floor smb-2">
                     <h6 class="mb-3">Rooms / Floors</h6>
-                    <div class="d-flex">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <label for="inputExampleTwo" class="sr-only">Input with left icon</label>
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="mdi mdi-star-circle"></i></span>
-                                        </div>
-                                        <input type="text" class="form-control" name="inputExampleTwo" id="inputExampleTwo" placeholder="Floors">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-group">
-                                    <label for="inputExampleTwo" class="sr-only">Input with left icon</label>
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="mdi mdi-star-circle"></i></span>
-                                        </div>
-                                        <input type="text" class="form-control" name="inputExampleTwo" id="inputExampleTwo" placeholder="Rooms">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
+                    <div class="d-flex justify-content-between">  
+                        <div class="architecture-dropdown mb-3">
+                            <select class="custom-select">
+                                <option selected>Rooms</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="architecture-dropdown mb-3">
+                            <select class="custom-select">
+                                <option selected>Floors</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>    
                     </div>
                 </div>
                 <div class="mb-2">
@@ -152,16 +215,27 @@
         </div>
         <div class="main">
             <div class="row">
+                <div class="col-12 mb-2">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h4 class="mb-0">FILTER</h4>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Filter</li>
+                            </ol>
+                        </nav>                       
+                    </div>
+                </div>
                 <div class="col-12 grid-margin">
                     <div class="card preview-card">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-6">
-                                    <img src="../assets/images/house-images/house-4.jpg" class="img-fluid" alt="">
+                                <div class="col-4">
+                                    <img src="../assets/images/house-images/house-4.jpg" class="img-fluid preview-card-image" alt="">
                                 </div>
-                                <div class="col-6">
-                                    <h4>Hamiltons Farmhouse<span class="badge badge-primary ml-3">New</span></h4>
-                                    <div class="card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s</div>
+                                <div class="col-8">
+                                    <h4>Hamiltons Farmhouse</h4>
+                                    <div class="card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
                                     <div class="d-flex justify-content-between align-items-center mt-3">
                                         <div class="card-actions">
                                             <a href="#"><i class="mdi mdi-heart text-danger"></i></a>
@@ -178,6 +252,7 @@
                                     </div>        
                                 </div>
                             </div>
+                            <div class="ribbon-wrapper"><div class="ribbon">NEW</div></div>
                         </div>
                     </div>
                 </div>
@@ -185,12 +260,12 @@
                     <div class="card preview-card">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-6">
-                                    <img src="../assets/images/house-images/house-2.jpg" class="img-fluid" alt="">
+                                <div class="col-4">
+                                    <img src="../assets/images/house-images/house-2.jpg" class="img-fluid preview-card-image" alt="">
                                 </div>
-                                <div class="col-6">
-                                    <h4>Favorite Estates<span class="badge badge-primary ml-3">New</span></h4>
-                                    <div class="card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s</div>
+                                <div class="col-8">
+                                    <h4>Favorite Estates</h4>
+                                    <div class="card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
                                     <div class="d-flex justify-content-between align-items-center mt-3">
                                         <div class="card-actions">
                                             <a href="#"><i class="mdi mdi-heart-outline"></i></a>
@@ -214,12 +289,12 @@
                     <div class="card preview-card">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-6">
-                                    <img src="../assets/images/house-images/house-3.jpg" class="img-fluid" alt="">
+                                <div class="col-4">
+                                    <img src="../assets/images/house-images/house-3.jpg" class="img-fluid preview-card-image" alt="">
                                 </div>
-                                <div class="col-6">
-                                    <h4>Cloud Nine Homes<span class="badge badge-primary ml-3">New</span></h4>
-                                    <div class="card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s</div>
+                                <div class="col-8">
+                                    <h4>Cloud Nine Homes</h4>
+                                    <div class="card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
                                     <div class="d-flex justify-content-between align-items-center mt-3">
                                         <div class="card-actions">
                                             <a href="#"><i class="mdi mdi-heart text-danger"></i></a>
@@ -236,6 +311,7 @@
                                     </div>        
                                 </div>
                             </div>
+                            <div class="ribbon-wrapper"><div class="ribbon">NEW</div></div>
                         </div>
                     </div>
                 </div>
@@ -243,12 +319,12 @@
                     <div class="card preview-card">
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-6">
-                                    <img src="../assets/images/house-images/house-5.jpg" class="img-fluid" alt="">
+                                <div class="col-4">
+                                    <img src="../assets/images/house-images/house-5.jpg" class="img-fluid preview-card-image" alt="">
                                 </div>
-                                <div class="col-6">
-                                    <h4>Cloud Nine Homes<span class="badge badge-primary ml-3">New</span></h4>
-                                    <div class="card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s</div>
+                                <div class="col-8">
+                                    <h4>Cloud Nine Homes</h4>
+                                    <div class="card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
                                     <div class="d-flex justify-content-between align-items-center mt-3">
                                         <div class="card-actions">
                                             <a href="#"><i class="mdi mdi-heart text-danger"></i></a>
@@ -332,6 +408,8 @@
         </div> 
     </div>
     <script src="../assets/vendors/jquery/jquery.min.js"></script>
+    <script src="../assets/vendors/popper/popper.min.js"></script>
+    <script src="../assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../assets/vendors/jquery-bar-rating/jquery.barrating.min.js"></script>
     <script src="../assets/vendors/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
     <script src="../assets/js/slider.js"></script>

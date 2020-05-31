@@ -1,4 +1,6 @@
 .left-sidebar {
+    background-color: #2a3042;
+    color: #ffffff;
     border-right: 1px solid $border-color;
     width: 265px;
     .filter-content {
@@ -11,7 +13,8 @@
 
 .right-sidebar {
     border-left: 1px solid $border-color;
-    width: 300px;
+    background-color: #ffffff;
+    width: 250px;
     .adversite-heading {
         padding: 15px 20px;
     }
@@ -20,5 +23,4 @@
             height: 20px;
         }
     }
-
 }
